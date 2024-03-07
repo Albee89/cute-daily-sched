@@ -1,0 +1,30 @@
+{
+  "name": "my-vanilla-js-project",
+  "version": "1.0.0",
+  "description": "easy exercise app with vanilla JS",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm start test",
+    "start": "http-server -o"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Albee89/cute-daily-sched.git"
+  },
+  "keywords": [
+    "schedule",
+    "exercise",
+    "activity",
+    "tracker"
+  ],
+  "author": "Alex Bain, bootstrapped from Codewithfaraz with original JS by me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Albee89/cute-daily-sched/issues"
+  },
+  "homepage": "https://github.com/Albee89/cute-daily-sched#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

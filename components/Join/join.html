@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Form</title>
+</head>
+<body>
+
+    <div id="joinForm">
+        <h2>Join Form</h2>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                required
+            />
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                required
+            />
+
+            <button type="submit">Join</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // State to manage form input values
+            var nameInput = document.getElementById('name');
+            var emailInput = document.getElementById('email');
+
+            // Handle form submission
+            var handleSubmit = function (event) {
+                event.preventDefault();
+                // Add your logic here to handle form submission (e.g., API call, validation)
+                console.log('Form submitted:', {
+                    name: nameInput.value,
+                    email: emailInput.value
+                });
+            };
+
+            // Attach event listener to form submission
+            document.getElementById('myForm').addEventListener('submit', handleSubmit);
+        });
+    </script>
+
+</body>
+</html>
